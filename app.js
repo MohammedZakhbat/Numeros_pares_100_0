@@ -1,12 +1,13 @@
-function mostrarPares(){
+document.getElementById("mostrarPares").addEventListener("click", mostrarPares);
 
-    let resultado ="";
+function mostrarPares() {
+    let resultado = "";
 
-    for (i>=0;i<=100;i--){
-
-        if(i%2==0){
-            resultado += i +"";
+    for (let i = 100; i >= 0; i--) {
+        if (i % 2 === 0) {
+            resultado += i + " ";
         }
     }
+
     document.getElementById("resultado").innerText = resultado;
 }
