@@ -1,4 +1,7 @@
-document.getElementById("mostrarPares").addEventListener("click", mostrarPares);
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("mostrarPares")
+        .addEventListener("click", mostrarPares);
+});
 
 function mostrarPares() {
     let resultado = "";
@@ -10,6 +13,4 @@ function mostrarPares() {
     }
 
     document.getElementById("resultado").innerText = resultado;
-    console.log("JS chargé");
-console.log(document.getElementById("mostrarPares"));
 }
