@@ -10,4 +10,6 @@ function mostrarPares() {
     }
 
     document.getElementById("resultado").innerText = resultado;
+    console.log("JS chargé");
+console.log(document.getElementById("mostrarPares"));
 }
